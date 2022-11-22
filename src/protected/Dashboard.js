@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   useEffect(()=>{
     if(!localStorage.getItem('token')){
-      navigate("/gstore");
+      navigate("/g-store");
     }else{
       axios.get('https://gstoreapi.herokuapp.com/v1/api/vegitables').then(res=> setlist(res.data));
       axios.get('https://gstoreapi.herokuapp.com/v1/api/fruites').then(res=> setfruitslist(res.data));

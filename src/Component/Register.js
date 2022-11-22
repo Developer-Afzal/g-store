@@ -31,7 +31,7 @@ const Register = () => {
     setemail("");
     setphone("");
     setpwd("");
-    navigate("/gstore");
+    navigate("/g-store");
     setTimeout(showmsg, 300);
   }
 
