@@ -24,8 +24,9 @@ const Header = (props) => {
     }
       function HideUserinfo(){
         hidemenu.current.style.display="none";
-    
     }
+
+    let username = (localStorage.getItem("Fname") + " " + localStorage.getItem("Lname"));
 
   return (
     <>
@@ -38,7 +39,7 @@ const Header = (props) => {
       <div className='userinfo' id="userinfo" ref={hidemenu} onMouseLeave={HideUserinfo}>
       <div className='profile'></div>  
           <div className='userinfo-sublist'>
-            <div><p>{props.user}</p></div>
+            <div><p>{username}</p></div>
             <div><p>Address : &nbsp;<NavLink>Edit</NavLink></p></div>
             <div><p>Order History</p></div>
             <div><p>Setting</p></div>
