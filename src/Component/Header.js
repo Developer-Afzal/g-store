@@ -9,7 +9,7 @@ const Header = () => {
     
        <nav className='public-nav'>
           <p><Link to='/g-store' className='Link'>G-STORE</Link></p>
-          <strong><NavLink className="Link" to="/g-store">Login /</NavLink><NavLink className="Link" to="/gstore/register"> Register</NavLink></strong>
+          <strong><NavLink className="Link" to="/g-store">Login /</NavLink><NavLink className="Link" to="/g-store/register"> Register</NavLink></strong>
       </nav>
     
     </>
