@@ -8,8 +8,8 @@ const Header = () => {
     <>
     
        <nav className='public-nav'>
-          <p><Link to='/gstore' className='Link'>G-STORE</Link></p>
-          <strong><NavLink className="Link" to="/gstore">Login /</NavLink><NavLink className="Link" to="/gstore/register"> Register</NavLink></strong>
+          <p><Link to='/g-store' className='Link'>G-STORE</Link></p>
+          <strong><NavLink className="Link" to="/g-store">Login /</NavLink><NavLink className="Link" to="/gstore/register"> Register</NavLink></strong>
       </nav>
     
     </>

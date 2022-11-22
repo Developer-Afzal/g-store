@@ -10,10 +10,10 @@ const App = () => {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/gstore" exact element={<LoginScreen/>} />
-          <Route path="/gstore/Cart" exact element={<CartScreeen/>} />
-          <Route path="/gstore/dashboard" exact element={<Dashboard/>} />
-          <Route path="/gstore/register" exact element={<Register/>}/>
+          <Route path="/g-store" exact element={<LoginScreen/>} />
+          <Route path="/g-store/Cart" exact element={<CartScreeen/>} />
+          <Route path="/g-store/dashboard" exact element={<Dashboard/>} />
+          <Route path="/g-store/register" exact element={<Register/>}/>
         </Routes>
       </BrowserRouter>
       

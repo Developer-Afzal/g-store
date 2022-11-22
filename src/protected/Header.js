@@ -11,7 +11,7 @@ const Header = (props) => {
   const hidemenu = useRef("");
   const {kart} = useSelector(state=> state.Counter)
     const logout = () =>{
-      navigate('/gstore');
+      navigate('/g-store');
         localStorage.clear();
        setTimeout(displaymsg, 2000);
     }
@@ -30,9 +30,9 @@ const Header = (props) => {
   return (
     <>
        <nav>
-          <span><div className='menu-btn' onMouseEnter={showlist}><div></div><div></div><div></div></div> <NavLink className="Link" to="/gstore"><p>G-STORE</p></NavLink></span>
+          <span><div className='menu-btn' onMouseEnter={showlist}><div></div><div></div><div></div></div> <NavLink className="Link" to="/g-store"><p>G-STORE</p></NavLink></span>
           <span><input tyle="text"/><img src={magnifier} alt="search" className='lens'/></span>
-          <span><NavLink to="/gstore/Cart" className="Link"><img src={cart} alt="cart"/><b>{kart}</b></NavLink>&nbsp;
+          <span><NavLink to="/g-store/Cart" className="Link"><img src={cart} alt="cart"/><b>{kart}</b></NavLink>&nbsp;
           <NavLink className="Link" onMouseOver={showUserinfo} ><AiOutlineUser size={40}/></NavLink></span>
       </nav>
       <div className='userinfo' id="userinfo" ref={hidemenu} onMouseLeave={HideUserinfo}>
